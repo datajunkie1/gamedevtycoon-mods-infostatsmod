@@ -175,16 +175,17 @@ var InfoStatsModAbescoUG_Core = function() {
                     
                     self.LastBestGame = bestGame;
                     
+                    // THIS WHOLE SECTION COMMENTED OUT BECAUSE I REFUSE TO FIGURE OUT HOW TO STOP THE CONSTANT NOTIFICATION -- datajunkie1
                     // If we want to show Best Game Notification, we do it here by pushing a notification into pipeline
-                    if (showBestGameNotifications) {    
-                        // We need to check if this game has been already nominated as best game
-                        if(!anotherRecord){
-                            GameManager.company.notifications.push(self.Notifications.getBestGameNotification());
-                        }
-                        else {
-                            GameManager.company.notifications.push(self.Notifications.getBestGameBreaksRecordsNotification());
-                        }
-                    }
+                    // if (showBestGameNotifications) {    
+                    //     // We need to check if this game has been already nominated as best game
+                    //     if(!anotherRecord){
+                    //         GameManager.company.notifications.push(self.Notifications.getBestGameNotification());
+                    //     }
+                    //     else {
+                    //         GameManager.company.notifications.push(self.Notifications.getBestGameBreaksRecordsNotification());
+                    //     }
+                    // }
                 }
                 
             }

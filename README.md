@@ -10,6 +10,7 @@
 #####ChangeLog Version 1.0#####
 **Last Update:  July 6, 2017**
 
+- Commented out push notification for "best game ever" that pops up each week
 - Fixed JS loading compatibility with Steam Workshop
 - Fixed CSS loading compatibility with Steam Workshop
 
