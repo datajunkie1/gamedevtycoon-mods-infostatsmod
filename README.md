@@ -4,8 +4,14 @@
 **Provides detailed information and statistics to games released, provides charts and analysis **
 **to game sales and financial themes.**
 
-- Launch: 			December 09th, 2013
-- Last Update:  January 16th, 2014
+- Launch: 		December 09th, 2013
+- Last Update:  July 6, 2017
+
+#####ChangeLog Version 1.0#####
+**Last Update:  July 6, 2017**
+
+- Fixed JS loading compatibility with Steam Workshop
+- Fixed CSS loading compatibility with Steam Workshop
 
 #####ChangeLog Version 0.4.1#####
 

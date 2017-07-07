@@ -53,7 +53,7 @@ footer.js             Name:       Constant Footer
 
 var InfoStatsModAbescoUG = {};
 (function () {
-    InfoStatsModAbescoUG.VERSION = '0.4.1';
+    InfoStatsModAbescoUG.VERSION = '1.0';
 
     this.Core;
     

@@ -6,6 +6,8 @@
 * Url:                  http://www.abesco.de/
 */
 
+var myPath= GDT.getRelativePath();
+
 var InfoStatsModAbescoUG_Utils = function(infoStatsModCore){
     var m       = this;
     var core    = infoStatsModCore;
@@ -175,23 +177,24 @@ var InfoStatsModAbescoUG_Utils = function(infoStatsModCore){
         for(var i = 1; i < 11; i++)
         {
             var $img = $(document.createElement('img'));
-            
+            var myPathImg = myPath + '/img/';
+
             if ( i <= ful ) {
-                $img.attr('src','./mods/InfoStatsMod/img/rating_4.png');
+                $img.attr('src', myPathImg+'rating_4.png');
             }
             else if ( i == ful + 1 && dec > 0){
                 if (dec >= 75){
-                    $img.attr('src','./mods/InfoStatsMod/img/rating_3.png');
+                    $img.attr('src', myPathImg+'rating_3.png');
                 }
                 else if(dec >= 50 || dec == 5){
-                    $img.attr('src','./mods/InfoStatsMod/img/rating_2.png');
+                    $img.attr('src', myPathImg+'rating_2.png');
                 }
                 else if(dec >= 25){
-                    $img.attr('src','./mods/InfoStatsMod/img/rating_1.png');
+                    $img.attr('src', myPathImg+'rating_1.png');
                 }
             }
             else {
-                $img.attr('src','./mods/InfoStatsMod/img/rating_0.png');
+                $img.attr('src', myPathImg+'rating_0.png');
             }
             
             if(scaling != 100){

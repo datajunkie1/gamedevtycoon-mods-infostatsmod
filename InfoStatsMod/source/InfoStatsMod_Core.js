@@ -216,7 +216,7 @@ var InfoStatsModAbescoUG_Core = function() {
                 link.id   = cssId;
                 link.rel  = 'stylesheet';
                 link.type = 'text/css';
-                link.href = 'mods/InfoStatsMod/libs/'+css[i]+'.css';
+                link.href = myPath.replace("/source","") + '/libs/'+css[i]+'.css';
                 link.media = 'all';
                 head.appendChild(link);
             }
@@ -345,7 +345,7 @@ var InfoStatsModAbescoUG_Core = function() {
         var retHtml = '';
         
         $.ajax({
-                url: "./mods/InfoStatsMod/html/gamedetails-tabs.html",
+                url: myPath.replace("/source","") + "/html/gamedetails-tabs.html",
                 async: false 
             }).done(function(data) {
                 retHtml = data;
